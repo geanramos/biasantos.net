@@ -1,9 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC>
 <html lang="pt-br">
    <head>
-      <title>Página do Burnes - Home</title>
+      <title>Página da Bia - Home</title>
       <meta charset="utf-8">
-      <meta name="description" content="Página do Burnes sobre HTML e CSS">
+      <meta name="description" content="Página da Bia sobre HTML e CSS">
       <meta name="keywords" content="html, css, js, site">
       <meta name="robots" content="index">
       <style>
@@ -12,15 +12,13 @@
          font-family: Montserrat,sans-serif;
          font-weight: 200 
     }
-     .logo_bia a {
-         color: #fff 
-         text-decoration: none;
-    }
+
      .logo_bia strong {
          font-weight: 900 
     }
      .logo_bia a {
-         color: #292b35 
+      color: #292b35;
+      text-decoration: none; 
     }
      em {
          font-style: normal;
@@ -29,23 +27,57 @@
      .logo_bia strong {
          font-weight: 900 
     }
+    a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a {
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 3px, 0 3px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+a:hover {
+  background-size: 0 3px, 100% 3px;
+} 
+
      @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,900)
    </style>
 
     </head>
     <body>
       <header>
-        <h1>Página do Burnes</h1>
-      </header>
+         <div class="logo_bia"><a href="/"><em></em>Bia<strong>Santos</strong>.net</a></div>
+      </header><br>
       <nav>
-        <a href="index.html" title="Home">Home</a>
+         <a href="index.html" title="Home">Home</a>
+         |
+         <a href="index.html" title="blog">Blog</a>
+         |
+         <a href="index.html" title="sobre">Sobre</a>
+         |
+         <a href="index.html" title="instagram">instagram</a>
       </nav>
       <main>
-        <h1>Olá! Bem vindo a minha Pagina!</h1>
+        <h3>Olá! Bem vindo a minha Pagina!</h3>
       </main>
-      <div class="logo_bia"><a aria-current="page" class="" href="/"><em>+</em>Bia<strong>Santos</strong>.net</a></div>
+      
       <footer>
-        <p>Desenvolvido por Burnes</p>
+        <p>Desenvolvido por @geanme_</p>
       </footer>
     </body>
 </html>

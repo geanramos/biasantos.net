@@ -7,6 +7,57 @@
       <meta name="keywords" content="html, css, js, site">
       <meta name="robots" content="index">
       <style>
+
+            .logo {
+                flex-shrink: 0;
+                flex-grow: 0;
+                font-size: 37px;
+                font-family: Montserrat,sans-serif;
+                font-weight: 200;
+                transition: opacity .3s,visibility .3s
+            }
+
+            @media screen and (max-width: 1024px) {
+                .logo {
+                    font-size:30px
+                }
+            }
+
+            @media screen and (max-width: 640px) {
+                .logo {
+                    font-size:26px
+                }
+            }
+
+            @media screen and (max-width: 480px) {
+                .logo {
+                    font-size:24px
+                }
+            }
+
+            @media screen and (max-width: 374px) {
+                .logo {
+                    font-size:20px
+                }
+            }
+
+            .logo a {
+                color: #000;
+                text-shadow: 0 2px 3px rgb(0 0 0/45%)
+            }
+
+            body.darken .logo a {
+                color: #000
+            }
+
+            .logo strong {
+                font-weight: 900
+            }
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&display=swap');
+
+
+
       .logo_bia {
          font-size: 26px;
          font-family: Montserrat,sans-serif;
@@ -53,15 +104,13 @@ a {
 
 a:hover {
   background-size: 0 3px, 100% 3px;
-} 
-
-     @import url(https://fonts.googleapis.com/css?family=Montserrat:200,400,900)
+}
    </style>
 
     </head>
     <body>
       <header>
-         <div class="logo_bia"><a href="/"><em></em>Bia<strong>Santos</strong>.net</a></div>
+         <div class="logo"><a href="/"><em>+</em>Bia<strong>Santos</strong>.net</a></div>
       </header><br>
       <nav>
          <a href="index.html" title="Home">Home</a>
@@ -77,7 +126,8 @@ a:hover {
       </main>
       
       <footer>
-        <p>Desenvolvido por @geanme_</p>
+<div class="logo"><a href="/">+Gean<strong>Ramos</strong></a></div>
+        <p><div class="logo_bia"><a href="/"><em>+</em>Bia<strong>Santos</strong>.net</a></div></p>
       </footer>
     </body>
 </html>
